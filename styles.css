@@ -1,0 +1,140 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #121212;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .bio-card {
+    background: #1e1e1e;
+    border-radius: 20px;
+    width: 350px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transform: translateY(0);
+    transition: all 0.5s ease;
+  }
+  
+  .bio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  }
+  
+  .avatar-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 10%;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+  }
+  
+  .avatar-container:hover .avatar {
+    transform: scale(1.1);
+  }
+  
+  .bio-details {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .name {
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 5px;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  .title {
+    font-size: 18px;
+    color: #bbb;
+    margin-bottom: 15px;
+    opacity: 0.8;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  .description {
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.6;
+    opacity: 0.9;
+    margin-bottom: 20px;
+    animation: fadeIn 2.5s ease-out;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    background-color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin: 5px;
+  }
+  
+  .social-icon:hover {
+    background-color: #0072ff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .linkedin {
+    background-color: #0077b5;
+  }
+  
+  .github {
+    background-color: #333;
+  }
+  
+  .twitter {
+    background-color: #1da1f2;
+  }
+  
+  .buymeacoffee {
+    background-color: #ff813f;
+  }
+  
+  .portfolio {
+    background-color: #f36f6f;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
