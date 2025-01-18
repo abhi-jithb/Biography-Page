@@ -126,6 +126,12 @@
   .portfolio {
     background-color: #f36f6f;
   }
+  .youtube {
+    background-color: #ff0000;
+  }
+  .gmail {
+    background-color: #d14836;
+  }
   
   @keyframes fadeIn {
     from {
